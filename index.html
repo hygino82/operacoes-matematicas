@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/sequencia.css" media="screen" />
+    <title>Gerador de sequências</title>
+</head>
+
+<body>
+    <div id="entrada" class="container">
+        <h3>Informe os valores conhecidos</h3>
+
+        <select class="form-select form-select-lg mb-3" id="escolha">
+            <option value="pa" selected>Progressão Aritmética</option>
+            <option value="pg">Progressão Geométrica</option>
+        </select>
+
+        <label for="primeiroValor">Primeiro Valor</label>
+        <input type="number" id="primeiroValor" value="11">
+        <label for="posicao1">Posição</label>
+        <input type="number" id="posicao1" min="1" value="3"><br>
+        <label for="segundoValor">Segundo Valor</label>
+        <input type="number" id="segundoValor" value="14">
+        <label for="posicao2">Posição</label>
+        <input type="number" id="posicao2" min="1" value="4"><br>
+        <label for="quantidade">Quantos elementos gerar</label>
+        <input type="number" id="quantidade" min="1" value="6"><br>
+        <button id="btnCalcula" class="btn btn-primary">Calcular</button>
+        <button id="btnLimpar" class="btn btn-warning">Limpar</button>
+    </div>
+    <div id="resultado"></div>
+    <script src="js/progressoes.js"></script>
+</body>
+
+</html>
